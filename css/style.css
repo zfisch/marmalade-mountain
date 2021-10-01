@@ -57,3 +57,13 @@ body {
   margin-left: 10px;
 }
 
+.album-announcement p {
+  background-color: black;
+  color: white;
+}
+
+.album-announcement img {
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
