@@ -1,17 +1,12 @@
-html { 
-  height: 100vh;
+body {
+  padding-left: 20px;
+  padding-right: 20px;
   background: url('../img/bg.jpg') no-repeat center center fixed; 
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-}
-
-body {
-  background-color: transparent;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .main-container {
