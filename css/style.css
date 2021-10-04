@@ -1,14 +1,13 @@
 body {
     padding-left: 20px;
     padding-right: 20px;
-    background: url('../img/bg.jpg') no-repeat center center fixed; 
+    background: url('../img/mm_sa_bg_color.jpg') no-repeat center center fixed; 
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Karla', sans-serif;
-    height: 100vh;
 }
 
 .main-container {
@@ -30,18 +29,8 @@ body {
 
 .headshot {
   text-align: center;
-}
-
-.headshot-img {
   width: 100px;
-}
-
-.headshot-txt {
-  text-align: center;
-}
-
-.headshot-follow {
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .spotify-follow {
@@ -58,3 +47,14 @@ body {
   margin-left: 10px;
 }
 
+.logo {
+  width: 250px;
+}
+
+.mg-30 {
+  margin-bottom: 30px;
+}
+
+.mg-50 {
+  margin-bottom: 50px;
+}
