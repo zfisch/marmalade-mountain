@@ -29,7 +29,7 @@ h1 {
   font-size: 18px;
 }
 
-h2 {
+h2.promo-header {
   font-size: 14px;
   margin-top: -20px;
   max-width: 500px;
@@ -67,6 +67,9 @@ h2 a {
   background-color: black;
 }
 
+.right-align-dropdown-toggle::after {
+  display: none;
+}
 
 .spotify-follow {
   margin-bottom: 15px;
