@@ -35,8 +35,12 @@ h2.promo-header {
   max-width: 500px;
 }
 
-h2 a {
+h2 a, a {
   color: rgb(33, 37, 41);
+}
+
+h2 a:hover, a:hover {
+  color: rgb(33, 37, 41, 0.75);
 }
 
 .main-container {
