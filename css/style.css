@@ -2,12 +2,6 @@
   body {
       padding-left: 20px;
       padding-right: 20px;
-      background: url('../img/bg_tile.jpg') no-repeat center center fixed; 
-      background-attachment: fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
       font-family: 'Karla', sans-serif;
       margin-top: -60px;
   }
@@ -16,12 +10,6 @@
 body {
     padding-left: 20px;
     padding-right: 20px;
-    background: url('../img/mm_sa_bg_color.jpg') no-repeat center center fixed; 
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     font-family: 'Karla', sans-serif;
 }
 
@@ -55,7 +43,7 @@ h2 a:hover, a:hover {
 }
 
 .album-img {
-  width: 300px;
+  width: 250px;
 }
 
 .btn {
@@ -90,7 +78,11 @@ h2 a:hover, a:hover {
 }
 
 .logo {
-  width: 200px;
+  width: 300px;
+}
+
+.mg-10 {
+  margin-bottom: 10px;
 }
 
 .mg-30 {
