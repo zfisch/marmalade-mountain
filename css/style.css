@@ -10,13 +10,15 @@
 body {
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Karla', sans-serif;
-    background: url('../img/mm_sa_bg_color.jpg') no-repeat center center fixed; 
+/*    font-family: 'Karla', sans-serif;*/
+/*    background: url('../img/mm_sa_bg_color.jpg') no-repeat center center fixed; */
+    background-color: black;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color:white;
 }
 
 .eighteen {
@@ -30,11 +32,11 @@ h2.promo-header {
 }
 
 h2 a, a {
-  color: rgb(33, 37, 41);
+  color: white;
 }
 
 h2 a:hover, a:hover {
-  color: rgb(33, 37, 41, 0.75);
+  color: white;
 }
 
 .main-container {
@@ -49,7 +51,7 @@ h2 a:hover, a:hover {
 }
 
 .album-img {
-  width: 250px;
+/*  width: 250px;*/
 }
 
 .btn {
@@ -62,7 +64,7 @@ h2 a:hover, a:hover {
 }
 
 .btn-dark {
-  background-color: black;
+  background-color: white;
 }
 
 .right-align-dropdown-toggle::after {
