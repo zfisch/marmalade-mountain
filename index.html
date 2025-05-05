@@ -17,17 +17,15 @@
   <style>
     body {
       margin: 0;
+      padding: 20px;
       background-color: #000;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       font-family: 'Cal Sans', sans-serif;
       text-align: center;
-      padding: 20px;
+      color: #ffffff;
+      transition: background 1s ease;
       position: relative;
+      overflow-x: hidden; /* prevent sideways scroll */
+      /* allow natural vertical scrolling */
     }
     h1 {
       color: #00D9E7; /* bright cyan */
