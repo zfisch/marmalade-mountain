@@ -8,30 +8,105 @@
   <meta property="og:description" content="Marmalade Mountain's new album, The Foundation for Early Childhood Education, is a dark folk rock journey through anger, grief, and redemption.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <!-- Cal Sans Font -->
+  <link href="https://cdn.jsdelivr.net/gh/calcom/font@latest/cal-sans.css" rel="stylesheet">
+  <!-- Dancing Script Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       background-color: #000;
+      overflow: hidden;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      font-family: 'Cal Sans', sans-serif;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    h1 {
+      color: #00D9E7; /* bright cyan */
+    }
+    .signature {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5em;
+      color: #F765A5; /* rose pink */
+    }
+    p {
+      color: #C7B5FF; /* pale lilac */
+    }
+    a {
+      color: #00D9E7;
+      text-decoration: none;
     }
     img {
       max-width: 100%;
       height: auto;
       display: block;
+      margin: 20px auto 0 auto;
     }
-    a {
-      display: block;
-      text-align: center;
+    #rain-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .raindrop {
+      position: absolute;
+      top: -20px;
+      width: 2px;
+      height: 10px;
+      background: #00D9E7;
+      animation: fall linear infinite;
+      opacity: 0.7;
+    }
+    @keyframes fall {
+      to {
+        transform: translateY(120vh);
+      }
+    }
+    .content {
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
-  <a href="https://open.spotify.com/album/7wX7T5BLgXxXmviicYqGE0?si=6XbrItr0QUOMsmESUSUaFg">
-    <img src="img/tffece.jpg" alt="The Foundation for Early Childhood Education album cover">
-  </a>
+
+  <!-- Rain Effect Background -->
+  <div id="rain-container"></div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>The Foundation for Early Childhood Education</h1>
+    <h2 class="signature">by Marmalade Mountain</h2>
+    <p>Coming some time late summer / fall</p>
+    <a href="https://open.spotify.com/playlist/5uUlI01PdcKFSWJcvsf46X?si=317e5709297d4faa">
+      <img src="img/tffece.jpg" alt="The Foundation for Early Childhood Education album cover">
+    </a>
+    <p>In the meantime I'll be releasing songs and adding them to the almighty <a href="https://open.spotify.com/playlist/5uUlI01PdcKFSWJcvsf46X?si=317e5709297d4faa">OUTSIDER FOLK ROCK BABY</a> playlist</p>
+  </div>
+
+  <!-- Rain Generation Script -->
+  <script>
+    const rainContainer = document.getElementById('rain-container');
+    for (let i = 0; i < 120; i++) {
+      const drop = document.createElement('div');
+      drop.className = 'raindrop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = 1 + Math.random() * 2 + 's';
+      drop.style.animationDelay = Math.random() * 2 + 's';
+      rainContainer.appendChild(drop);
+    }
+  </script>
+
 </body>
 </html>
